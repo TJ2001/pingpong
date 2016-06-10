@@ -5,20 +5,29 @@ $(document).ready(function(){
     var number = parseInt($("#number").val());
     var narray = [];
 
-    for(var index = 0; index <= number; index += 1){
+    for(var index = 1; index <= number; index += 1){
       narray.push(index);
     }
 
     for(var pp = 2; pp < narray.length; pp++) {
       for(var i=0; i < narray.length; i++){
         var px = narray[i];
+        if(px%3 === 0 && px != 0){
+          narray[i] = "ping";
+        }
+        if(px%5 === 0 && px != 0){
+          narray[i] = "pong";
+        }
+        if(px%15 === 0 && px != 0){
+          narray[i] = "pingpong";
+        }
         // // if(px%pp === 0 && px!=pp) {
         // //   narray.splice(i,1);
         // }
       }
     }
 
-    $("#result").text(narray.join(", "));
+    $("#result").text(narray.join(" "));
 
   });
 });
