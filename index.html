@@ -2,26 +2,41 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-<!-- <link rel="stylesheet" href="css/styles.css"> -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/styles.css">
 
 
 <title>PingPong</title>
 </head>
 <body>
+<div class= "header">
+ <h1>Ping Pong</h1>
 
+</div>
 <div class="container">
- <h1>PingPong</h1>
+  <h2 class="margin-top"><strong>Let's Play</strong></h2>
+  <h3>Rules:</h3>
+  <p>
+    Ping Pong will count up to your number from 1 with the following exceptions:
+  </p>
+  <ol>
+    <li>Numbers divisible by 3 become "ping"</li>
+    <li>Numbers divisible by 5 become "pong"</li>
+    <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+  </ol>
+
 
  <form id="pingpong">
    <div class="form-group">
-     <label for="number">Enter Number Here</label>
+     <label for="number"><h3>Enter Number Here</h3></label>
      <input id="number" type="text">
    </div>
 
    <button type="submit" class="btn">Extrapolate</button>
  </form>
-<ul id="result">
-</ul>
+ <ul id="result">
+ </ul>
+</div>
 
 
 

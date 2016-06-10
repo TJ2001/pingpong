@@ -1,0 +1,25 @@
+.header{
+  display: block;
+  margin: auto;
+  background-color: lightblue;
+  text-align: center;
+  margin-top: 100px;
+  padding: 100px;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3 {
+  font-family: 'Poiret One', cursive;
+}
+
+body {
+  background-color: #77DD77;
+}
+
+.margin-top{
+  margin-top: 50px;
+}
